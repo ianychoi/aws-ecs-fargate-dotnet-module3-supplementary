@@ -9,7 +9,7 @@ public class IndexModel : PageModel
  public string Location { get; set; } = "Dallas";
 
  public string Message { get; private set; } = "";
- public IEnumerable? Items { get; private set; }
+ public IEnumerable<WeatherForecast>? Items { get; private set; }
 
  private readonly IConfiguration _configuration;
  private static readonly HttpClient _httpClient = new();
@@ -25,7 +25,7 @@ public class IndexModel : PageModel
   {
    var requestUri = $"{_configuration["AppSettings:WeatherAPI"]}/WeatherForecast?location={Location}";
 
-   Items = await _httpClient.GetFromJsonAsync>(requestUri);
+   Items = await _httpClient.GetFromJsonAsync<IEnumerable<WeatherForecast>>(requestUri);
    Message = $"{Items?.Count()} forecast records found";
   }
   catch (HttpRequestException ex)
