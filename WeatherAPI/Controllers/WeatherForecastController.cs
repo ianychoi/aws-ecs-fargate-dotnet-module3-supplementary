@@ -19,7 +19,7 @@ public class WeatherForecastController : ControllerBase
 
     private readonly ILogger _logger;
 
-    public WeatherForecastController(ILogger logger)
+    public WeatherForecastController(ILogger<WeatherForecastController> logger)
     {
         _logger = logger;
     }
