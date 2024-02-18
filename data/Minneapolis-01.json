@@ -1,0 +1,17 @@
+{
+  "Location": {
+    "S": "Minneapolis"
+  },
+  "Timestamp": {
+    "S": "2022-07-23T06:00:00"
+  },
+  "Summary": {
+    "S": "Cool"
+  },
+  "TempC": {
+    "N": "13"
+  },
+  "TempF": {
+    "N": "56"
+  }
+}

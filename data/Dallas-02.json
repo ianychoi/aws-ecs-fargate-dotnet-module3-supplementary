@@ -1,0 +1,17 @@
+{
+  "Location": {
+    "S": "Dallas"
+  },
+  "Timestamp": {
+    "S": "2022-07-23T12:00:00"
+  },
+  "Summary": {
+    "S": "Scorching"
+  },
+  "TempC": {
+    "N": "43"
+  },
+  "TempF": {
+    "N": "109"
+  }
+}

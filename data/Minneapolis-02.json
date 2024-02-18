@@ -1,0 +1,17 @@
+{
+  "Location": {
+    "S": "Minneapolis"
+  },
+  "Timestamp": {
+    "S": "2022-07-23T12:00:00"
+  },
+  "Summary": {
+    "S": "Balmy"
+  },
+  "TempC": {
+    "N": "22"
+  },
+  "TempF": {
+    "N": "72"
+  }
+}
